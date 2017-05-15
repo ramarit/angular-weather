@@ -21,23 +21,24 @@ angular
     'ngTouch'
   ])
   .config(function ($routeProvider) {
+    var site_prefix = '/angular-weather';
     $routeProvider
-      .when('/', {
+      .when(site_prefix + '/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
+      .when(site_prefix + '/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/current/:cityID', {
+      .when(site_prefix + '/current/:cityID', {
         templateUrl: 'views/current.html',
         controller: 'CurrentCtrl',
         controllerAs: 'current'
       })
-      .when('/forecast/:cityID', {
+      .when(site_prefix + '/forecast/:cityID', {
         templateUrl: 'views/forecast.html',
         controller: 'ForecastCtrl',
         controllerAs: 'forecast'
