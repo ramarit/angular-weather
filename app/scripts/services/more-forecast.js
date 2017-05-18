@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc service
- * @name angularWeatherApp.forecast
+ * @name angularWeatherApp.moreForecast
  * @description
- * # forecast
+ * # moreForecast
  * Factory in the angularWeatherApp.
  */
 angular.module('angularWeatherApp')
-  .factory('forecast', function ($resource) {
+  .factory('moreForecast', function ($resource) {
     // Service logic
     // ...
 

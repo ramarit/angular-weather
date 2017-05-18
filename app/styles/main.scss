@@ -3,17 +3,31 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+$background-color: #e66b6b;
+$text-color: #fff;
+
 .browsehappy {
-  margin: 0.2em 0;
+
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
 }
 
+html,
 body {
   padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
+body {
+  padding: 0;
+  font: 'Lato', sans-serif;
+}
+
+.navbar {
+  margin: 0;
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -69,9 +83,9 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
+  /*.container {
     max-width: 730px;
-  }
+  }*/
 
   /* Remove the padding we set earlier */
   .header,
@@ -90,17 +104,222 @@ body {
   }
 }
 
-/*dl, dt, dd {
-  margin: 0;
+.jumbotron {
+  background-color: $background-color;
+  color: $text-color;
 }
 
-dl {
-  width: 25%;
-  border: 1px solid;
-  padding: 10px;
-  margin: 5px;
-  float: left;
-  height: 200px;
+.jumbotron p input{
+  color: black;
+}
+
+/**** current view ****/
+.current-container {
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.calendar-container {
+  position: relative;
+  width: 450px;
+}
+
+.calendar-container .city-info {
+  border-radius: 1em 1em 0 0;
+  background: $background-color;
+  color: #fff;
+  padding: 3em 2em;
+}
+
+.current-dl {
+  height: 25px;
+}
+
+.city {
+  font-size: 4em;
+  line-height: 1em;
+}
+
+.date {
+  font-size: 3em;
+  line-height: 1em;
+  font-weight: 400;
+}
+.day {
+  font-size: 8em;
+  font-weight: 900;
+  line-height: 1em;
+}
+
+.month {
+  font-size: 4em;
+  line-height: 1em;
+  text-transform: lowercase;
+}
+
+.icon {
+  float:right;
+  clear: both;
+  margin-top: -175px;
+}
+
+.current-description {
+  border: 1px solid $background-color;
+  padding: 15px 30px;
+  padding-bottom: 200px;
+  margin-bottom: 20px;
+}
+
+/**** Forecast ****/
+.description-dl {
+  display: inline-block;
+  vertical-align: top;
+  margin: 1em;
+  height: 100px;
+}
+
+.forecast-container .forecast-info {
+  border-radius: 1em 1em 0 0;
+  background: $background-color;
+  color: #fff;
+  padding: 3em 2em;
+}
+  
+/*.forecast-dt{
+  font-weight:bold;
+  font-size:1.5em;
+  margin-bottom:0.7em;
+}
+
+.forecast-dd{
+  color:#444;
+  font-size:1em;
+  margin:0 0 2em 0;
+  line-height:1.5em;
+  text-transform: lowercase;
 }*/
+
+.max {
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: 500;
+}
+
+.min {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+
+.forecast-description {
+  font-size: 1.5em;
+  line-height: 1em;
+}
+/*.weather-report {
+  border-radius: 1em;
+  background: #e66b6b;
+  color: #fff;
+  padding: 3em 2em;
+  width: 100%;
+}*/
+
+.forecast-container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.forecast-container .city-info {
+  color: #fff;
+  padding: 3em 2em;
+}
+
+.arrow {
+  left: 2%;
+  position: relative;
+  transform: translate(0px, 250px)
+}
+
+dl.weather-report.description-dl.ng-scope {
+  width: 200px;
+  height: 550px;
+  border-radius: 1em 1em 0 0;
+  background: $background-color;
+  text-align: center;
+}
+
+.saved-cities-list {
+  margin-bottom: 1em;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $background-color;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #fff;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 591px) {
+  dl.weather-report.description-dl.ng-scope {
+    width: 90%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 592px) and (max-width : 768px) {
+  dl.weather-report.description-dl.ng-scope {
+    width: 45%;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  dl.weather-report.description-dl.ng-scope {
+
+  }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+
+
+
 
 

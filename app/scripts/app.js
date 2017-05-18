@@ -42,6 +42,11 @@ angular
         controller: 'ForecastCtrl',
         controllerAs: 'forecast'
       })
+      .when('/more-forecast:cityID', {
+        templateUrl: 'views/more-forecast.html',
+        controller: 'MoreForecastCtrl',
+        controllerAs: 'moreForecast'
+      })
       .otherwise({
         redirectTo: '/'
       });

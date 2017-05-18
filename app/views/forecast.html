@@ -1,10 +1,19 @@
-<h1>16-day Forecast for {{forecastData.city.name}} {{forecastData.city.country}}</h1>
-<dl ng-repeat="weather in forecastData.list" class="weather-report">
-    <dt>Forecast for {{weather.dt*1000 | date:'MMM dd, yyyy'}}</dt>
-    <dd>{{weather.weather[0].main}}</dd>
-    <dd>{{weather.weather[0].description}}</dd>
-    <dt>Temperature</dt>
-    <dd>Min: {{weather.temp.min}} &deg;F Max: {{weather.temp.max}} &deg;F</dd>
-</dl>
+<div class="forecast-container">
+  <h1>{{forecastData.city.name}}, {{forecastData.city.country}}</h1>
+  <p><a ng-href="#!/current/{{cityID}}" class="btn btn-lg btn-primary">View Current Weather</a></p>
+  <h1>5-day Forecast</h1>
+  <dl ng-repeat="weather in forecastData.list | limitTo:5:0" class="weather-report description-dl">
+    <div class="forecast-info">
+      <div class="date">{{weather.dt*1000 | date: 'EEE'}}</div>
+      <div class="day">{{weather.dt*1000 | date:'dd'}}</div>
+      <div class="month">{{weather.dt*1000 | date:'MMM'}}</div>
+      <div class="forecast-icon"><img src="http://openweathermap.org/img/w/{{weather.weather[0].icon}}.png" alt="icon" style="width:128px;height:128px;"></div>  
+      <div class="max">{{weather.temp.max}} &deg;F</div>
+      <div class="min">{{weather.temp.min}} &deg;F</div>
+      <div class="forecast-description">{{weather.weather[0].main}}</div>
+      <div class="forecast-description">{{weather.weather[0].description}}</div>
+    </div>
+  </dl>
+  <!--<div class="arrow"><a ng-href="#!/more-forecast/{{cityID}}" style="display: block; z-index: 1"><object data="images/right-chevron.svg" alt="chevron icon" type="image/svg+xml" style="z-index: -1; pointer-events: none;"></object></a> </div>-->
+</div>
 
-<p><a ng-href="#!/current/{{cityID}}" class="btn btn-lg btn-primary">View Current Weather</a></p>
