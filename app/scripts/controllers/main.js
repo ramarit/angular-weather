@@ -18,6 +18,12 @@ angular.module('angularWeatherApp')
         });
         $scope.searchQuery = $scope.location;
     };
+
+    $scope.removeCity = function(city) {
+        window.localStorage.clear();
+        window.location.reload();
+    };
   });
+
 
 

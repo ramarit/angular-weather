@@ -1,7 +1,12 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+@import "variables"; // Override default Bootstrap values.
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+@import "content";
+@import "buttons";
+@import "transitions";
 
 $background-color: #e66b6b;
 $text-color: #fff;
@@ -304,7 +309,7 @@ h2 {
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+@media only screen and (max-width : 992px) {
   dl.weather-report.description-dl.ng-scope {
 
   }

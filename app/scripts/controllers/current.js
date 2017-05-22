@@ -16,22 +16,27 @@ angular.module('angularWeatherApp')
     });
 
     $scope.saveCity = function(city){
-        var cityData = {
-            'name': city.name,
-            'id': city.id
-        };
+    var cityData = {
+        'name': city.name,
+        'id': city.id
+    };
         if (!$localStorage.savedCities){
             $localStorage.savedCities = [cityData];
-        } else {
+            //if local storage empty, add saved message for first city in array
+            $scope.citySaved = {
+                'success': true
+            };
+        } 
+        else {
             // Check to make sure we haven't already saved the city.
             var save = true;
             for (var i=0; i < $localStorage.savedCities.length; i++){
-                if ($localStorage.savedCities[i].id == cityData.id) {
+                if ($localStorage.savedCities[i].id === cityData.id) {
                     // this is a duplicate, so don't save
                     save = false;
                 }
             }
-            if (save==true){
+            if (save===true){
                 $localStorage.savedCities.push(cityData);
                 // Add object to trigger messages
                 $scope.citySaved = {
@@ -46,40 +51,4 @@ angular.module('angularWeatherApp')
             }
         }
     };
-
-    /*$scope.removeCity = function(city) {
-        var cityData = {
-            'name': city.name,
-            'id': city.id 
-        };
-        if (!$localStorage.savedCities){
-            console.log('city not in list');
-            // Add object to trigger messages
-            $scope.citySaved = {
-                'duplicate': true
-            };
-        } else {
-            var saved = true;
-            var cityIndex;
-            for (var i=0; i < $localStoreage.savedCities.length; i++){
-                if ($localStore.savedCities[i].id == cityData.id) {
-                    saved = true;
-                }
-            }
-            if (saved == true) {
-
-                $localStorage.savedCities.pop(cityData);
-                // Add object to trigger messages
-                $scope.cityRemoved = {
-                    'success': true
-                };
-            } else {
-                console.log('city not in list');
-                // Add object to trigger messages
-                $scope.citySaved = {
-                    'duplicate': true
-                };
-            }
-        }
-    };*/
-  });
+});
