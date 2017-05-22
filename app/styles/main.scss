@@ -1,11 +1,8 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
-@import "variables"; // Override default Bootstrap values.
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-// endbower
-
-
 @import "transitions";
+// endbower
 
 $background-color: #e66b6b;
 $text-color: #fff;
