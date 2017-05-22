@@ -21,7 +21,7 @@ angular.module('angularWeatherApp')
 
     $scope.removeCity = function(city) {
         window.localStorage.clear();
-        window.location.reload();
+        /*window.location.reload();*/
     };
   });
 
