@@ -13,7 +13,10 @@
     "angular-sanitize": "^1.4.0",
     "angular-touch": "^1.4.0",
     "ngstorage": "^0.3.11",
-    "animate.css": "^3.5.2"
+    "animate.css": "^3.5.2",
+    "angular-google-maps-geocoder": "^0.0.4",
+    "angular-busy": "^4.1.4",
+    "angular-reverse-geocode": "1.2.16"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"
@@ -28,5 +31,8 @@
         "dist/js/bootstrap.js"
       ]
     }
+  },
+  "resolutions": {
+    "angular": "1.6.4"
   }
 }

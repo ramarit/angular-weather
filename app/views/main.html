@@ -1,7 +1,7 @@
 <div ng-app ng-controller="MainCtrl">
   <div ng-if="storage.savedCities">
     <h2>Saved Cities</h2>
-    <p><button class="btn btn-sm btn-primary" ng-click="removeCity(currentWeather)">Remove Cities</button></p>
+    <p><button class="btn btn-sm btn-primary" ng-click="removeCity()">Remove Cities</button></p>
     <ul class="saved-cities-list">
       <li ng-repeat="city in storage.savedCities">
         <a ng-href="#!/current/{{city.id}}" class="">{{city.name}}</a>
@@ -20,11 +20,12 @@
       <p>
         <button class="btn btn-lg btn-primary" ng-click="findCities()" ng-keydown="$event.keycode === 13 && findCities()">Find City</button>
       </p>
-
     </div>
+
     <div ng-if="searchQuery">
-      <p class="lead">{{citiesFound.count}} cities found matching the query: {{searchQuery}}.</p>
+      <p class="lead">{{citiesFound.count}} cities found matching: {{searchQuery}}.</p>
       <dl ng-repeat="city in citiesFound.list">
+        <reverse-geocode lat="{{city.coord.lat}}" lng="{{city.coord.lon}}"></reverse-geocode>
         <dt>{{city.name}}, {{city.sys.country}}</dt>
         <dd>{{city.weather[0].main}} - {{city.weather[0].description}}</dd>
         <dt>Temperature</dt>

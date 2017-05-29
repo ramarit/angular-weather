@@ -1,0 +1,500 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'angular-google-maps-geocoder',
+1 verbose cli   '--save',
+1 verbose cli   'dev' ]
+2 info using npm@4.1.2
+3 info using node@v6.9.5
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData angular-google-maps-geocoder
+8 silly fetchPackageMetaData dev
+9 silly fetchNamedPackageData angular-google-maps-geocoder
+10 silly mapToRegistry name angular-google-maps-geocoder
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'angular-google-maps-geocoder',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'angular-google-maps-geocoder',
+13 silly mapToRegistry   name: 'angular-google-maps-geocoder',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/angular-google-maps-geocoder
+15 silly fetchNamedPackageData dev
+16 silly mapToRegistry name dev
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry data Result {
+19 silly mapToRegistry   raw: 'dev',
+19 silly mapToRegistry   scope: null,
+19 silly mapToRegistry   escapedName: 'dev',
+19 silly mapToRegistry   name: 'dev',
+19 silly mapToRegistry   rawSpec: '',
+19 silly mapToRegistry   spec: 'latest',
+19 silly mapToRegistry   type: 'tag' }
+20 silly mapToRegistry uri https://registry.npmjs.org/dev
+21 verbose request uri https://registry.npmjs.org/angular-google-maps-geocoder
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 7:13:06 PM
+24 verbose request id 430d522b434a32a9
+25 verbose etag W/"58a38408-18c1"
+26 verbose lastModified Tue, 14 Feb 2017 22:26:16 GMT
+27 http request GET https://registry.npmjs.org/angular-google-maps-geocoder
+28 verbose request uri https://registry.npmjs.org/dev
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 7:13:06 PM
+31 http request GET https://registry.npmjs.org/dev
+32 http 304 https://registry.npmjs.org/angular-google-maps-geocoder
+33 verbose headers { date: 'Wed, 24 May 2017 02:13:07 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   etag: 'W/"58a38408-18c1"',
+33 verbose headers   age: '0',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-sjc3636-SJC',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1495591987.330552,VS0,VE21',
+33 verbose headers   vary: 'Accept-Encoding' }
+34 silly get cb [ 304,
+34 silly get   { date: 'Wed, 24 May 2017 02:13:07 GMT',
+34 silly get     via: '1.1 varnish',
+34 silly get     'cache-control': 'max-age=300',
+34 silly get     etag: 'W/"58a38408-18c1"',
+34 silly get     age: '0',
+34 silly get     connection: 'keep-alive',
+34 silly get     'x-served-by': 'cache-sjc3636-SJC',
+34 silly get     'x-cache': 'MISS',
+34 silly get     'x-cache-hits': '0',
+34 silly get     'x-timer': 'S1495591987.330552,VS0,VE21',
+34 silly get     vary: 'Accept-Encoding' } ]
+35 verbose etag https://registry.npmjs.org/angular-google-maps-geocoder from cache
+36 verbose get saving angular-google-maps-geocoder to /Users/ryanamarit1/.npm/registry.npmjs.org/angular-google-maps-geocoder/.cache.json
+37 verbose correctMkdir /Users/ryanamarit1/.npm correctMkdir not in flight; initializing
+38 http 200 https://registry.npmjs.org/dev
+39 verbose headers { server: 'nginx/1.10.1',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'last-modified': 'Sat, 20 May 2017 22:13:19 GMT',
+39 verbose headers   etag: 'W/"5920bf7f-22ca"',
+39 verbose headers   'content-encoding': 'gzip',
+39 verbose headers   'cache-control': 'max-age=300',
+39 verbose headers   'content-length': '1257',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Wed, 24 May 2017 02:13:07 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   age: '0',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-sjc3626-SJC',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1495591987.331523,VS0,VE22',
+39 verbose headers   vary: 'Accept-Encoding' }
+40 silly get cb [ 200,
+40 silly get   { server: 'nginx/1.10.1',
+40 silly get     'content-type': 'application/json',
+40 silly get     'last-modified': 'Sat, 20 May 2017 22:13:19 GMT',
+40 silly get     etag: 'W/"5920bf7f-22ca"',
+40 silly get     'content-encoding': 'gzip',
+40 silly get     'cache-control': 'max-age=300',
+40 silly get     'content-length': '1257',
+40 silly get     'accept-ranges': 'bytes',
+40 silly get     date: 'Wed, 24 May 2017 02:13:07 GMT',
+40 silly get     via: '1.1 varnish',
+40 silly get     age: '0',
+40 silly get     connection: 'keep-alive',
+40 silly get     'x-served-by': 'cache-sjc3626-SJC',
+40 silly get     'x-cache': 'MISS',
+40 silly get     'x-cache-hits': '0',
+40 silly get     'x-timer': 'S1495591987.331523,VS0,VE22',
+40 silly get     vary: 'Accept-Encoding' } ]
+41 verbose get saving dev to /Users/ryanamarit1/.npm/registry.npmjs.org/dev/.cache.json
+42 verbose correctMkdir /Users/ryanamarit1/.npm correctMkdir not in flight; initializing
+43 silly install normalizeTree
+44 silly loadCurrentTree Finishing
+45 silly loadIdealTree Starting
+46 silly install loadIdealTree
+47 silly cloneCurrentTree Starting
+48 silly install cloneCurrentTreeToIdealTree
+49 silly cloneCurrentTree Finishing
+50 silly loadShrinkwrap Starting
+51 silly install loadShrinkwrap
+52 silly loadShrinkwrap Finishing
+53 silly loadAllDepsIntoIdealTree Starting
+54 silly install loadAllDepsIntoIdealTree
+55 silly resolveWithNewModule dev@0.1.3 checking installable status
+56 silly cache add args [ 'dev', null ]
+57 verbose cache add spec dev
+58 silly resolveWithNewModule angular-google-maps-geocoder@0.0.4 checking installable status
+59 silly cache add args [ 'angular-google-maps-geocoder', null ]
+60 verbose cache add spec angular-google-maps-geocoder
+61 silly cache add parsed spec Result {
+61 silly cache add   raw: 'dev',
+61 silly cache add   scope: null,
+61 silly cache add   escapedName: 'dev',
+61 silly cache add   name: 'dev',
+61 silly cache add   rawSpec: '',
+61 silly cache add   spec: 'latest',
+61 silly cache add   type: 'tag' }
+62 silly addNamed dev@latest
+63 verbose addNamed "latest" is being treated as a dist-tag for dev
+64 info addNameTag [ 'dev', 'latest' ]
+65 silly mapToRegistry name dev
+66 silly mapToRegistry using default registry
+67 silly mapToRegistry registry https://registry.npmjs.org/
+68 silly mapToRegistry data Result {
+68 silly mapToRegistry   raw: 'dev',
+68 silly mapToRegistry   scope: null,
+68 silly mapToRegistry   escapedName: 'dev',
+68 silly mapToRegistry   name: 'dev',
+68 silly mapToRegistry   rawSpec: '',
+68 silly mapToRegistry   spec: 'latest',
+68 silly mapToRegistry   type: 'tag' }
+69 silly mapToRegistry uri https://registry.npmjs.org/dev
+70 verbose addNameTag registry:https://registry.npmjs.org/dev not in flight; fetching
+71 silly cache add parsed spec Result {
+71 silly cache add   raw: 'angular-google-maps-geocoder',
+71 silly cache add   scope: null,
+71 silly cache add   escapedName: 'angular-google-maps-geocoder',
+71 silly cache add   name: 'angular-google-maps-geocoder',
+71 silly cache add   rawSpec: '',
+71 silly cache add   spec: 'latest',
+71 silly cache add   type: 'tag' }
+72 silly addNamed angular-google-maps-geocoder@latest
+73 verbose addNamed "latest" is being treated as a dist-tag for angular-google-maps-geocoder
+74 info addNameTag [ 'angular-google-maps-geocoder', 'latest' ]
+75 silly mapToRegistry name angular-google-maps-geocoder
+76 silly mapToRegistry using default registry
+77 silly mapToRegistry registry https://registry.npmjs.org/
+78 silly mapToRegistry data Result {
+78 silly mapToRegistry   raw: 'angular-google-maps-geocoder',
+78 silly mapToRegistry   scope: null,
+78 silly mapToRegistry   escapedName: 'angular-google-maps-geocoder',
+78 silly mapToRegistry   name: 'angular-google-maps-geocoder',
+78 silly mapToRegistry   rawSpec: '',
+78 silly mapToRegistry   spec: 'latest',
+78 silly mapToRegistry   type: 'tag' }
+79 silly mapToRegistry uri https://registry.npmjs.org/angular-google-maps-geocoder
+80 verbose addNameTag registry:https://registry.npmjs.org/angular-google-maps-geocoder not in flight; fetching
+81 verbose get https://registry.npmjs.org/dev not expired, no request
+82 silly addNameTag next cb for dev with tag latest
+83 silly addNamed dev@0.1.3
+84 verbose addNamed "0.1.3" is a plain semver version for dev
+85 verbose get https://registry.npmjs.org/angular-google-maps-geocoder not expired, no request
+86 silly addNameTag next cb for angular-google-maps-geocoder with tag latest
+87 silly addNamed angular-google-maps-geocoder@0.0.4
+88 verbose addNamed "0.0.4" is a plain semver version for angular-google-maps-geocoder
+89 silly mapToRegistry name dev
+90 silly mapToRegistry using default registry
+91 silly mapToRegistry registry https://registry.npmjs.org/
+92 silly mapToRegistry data Result {
+92 silly mapToRegistry   raw: 'dev',
+92 silly mapToRegistry   scope: null,
+92 silly mapToRegistry   escapedName: 'dev',
+92 silly mapToRegistry   name: 'dev',
+92 silly mapToRegistry   rawSpec: '',
+92 silly mapToRegistry   spec: 'latest',
+92 silly mapToRegistry   type: 'tag' }
+93 silly mapToRegistry uri https://registry.npmjs.org/dev
+94 verbose addRemoteTarball https://registry.npmjs.org/dev/-/dev-0.1.3.tgz not in flight; adding
+95 verbose addRemoteTarball [ 'https://registry.npmjs.org/dev/-/dev-0.1.3.tgz',
+95 verbose addRemoteTarball   '89fdc08705e0e7eaef92d012e26751e4d744322a' ]
+96 silly cache afterAdd angular-google-maps-geocoder@0.0.4
+97 verbose afterAdd /Users/ryanamarit1/.npm/angular-google-maps-geocoder/0.0.4/package/package.json not in flight; writing
+98 verbose correctMkdir /Users/ryanamarit1/.npm correctMkdir not in flight; initializing
+99 info retry fetch attempt 1 at 7:13:07 PM
+100 info attempt registry request try #1 at 7:13:07 PM
+101 http fetch GET https://registry.npmjs.org/dev/-/dev-0.1.3.tgz
+102 verbose afterAdd /Users/ryanamarit1/.npm/angular-google-maps-geocoder/0.0.4/package/package.json written
+103 http fetch 200 https://registry.npmjs.org/dev/-/dev-0.1.3.tgz
+104 silly fetchAndShaCheck shasum 89fdc08705e0e7eaef92d012e26751e4d744322a
+105 verbose addTmpTarball /var/folders/p6/11n3hgn157d6ghtpks76pshr0000gp/T/npm-2151-925d0d2d/registry.npmjs.org/dev/-/dev-0.1.3.tgz not in flight; adding
+106 verbose addTmpTarball already have metadata; skipping unpack for dev@0.1.3
+107 verbose correctMkdir /Users/ryanamarit1/.npm correctMkdir not in flight; initializing
+108 silly cache afterAdd dev@0.1.3
+109 verbose afterAdd /Users/ryanamarit1/.npm/dev/0.1.3/package/package.json not in flight; writing
+110 verbose correctMkdir /Users/ryanamarit1/.npm correctMkdir not in flight; initializing
+111 verbose afterAdd /Users/ryanamarit1/.npm/dev/0.1.3/package/package.json written
+112 silly fetchNamedPackageData angular
+113 silly mapToRegistry name angular
+114 silly mapToRegistry using default registry
+115 silly mapToRegistry registry https://registry.npmjs.org/
+116 silly mapToRegistry data Result {
+116 silly mapToRegistry   raw: 'angular',
+116 silly mapToRegistry   scope: null,
+116 silly mapToRegistry   escapedName: 'angular',
+116 silly mapToRegistry   name: 'angular',
+116 silly mapToRegistry   rawSpec: '',
+116 silly mapToRegistry   spec: 'latest',
+116 silly mapToRegistry   type: 'tag' }
+117 silly mapToRegistry uri https://registry.npmjs.org/angular
+118 verbose request uri https://registry.npmjs.org/angular
+119 verbose request no auth needed
+120 info attempt registry request try #1 at 7:13:07 PM
+121 verbose etag W/"592433b6-24b3e"
+122 verbose lastModified Tue, 23 May 2017 13:05:58 GMT
+123 http request GET https://registry.npmjs.org/angular
+124 http 304 https://registry.npmjs.org/angular
+125 verbose headers { date: 'Wed, 24 May 2017 02:13:08 GMT',
+125 verbose headers   via: '1.1 varnish',
+125 verbose headers   'cache-control': 'max-age=300',
+125 verbose headers   etag: 'W/"592433b6-24b3e"',
+125 verbose headers   age: '20',
+125 verbose headers   connection: 'keep-alive',
+125 verbose headers   'x-served-by': 'cache-sjc3626-SJC',
+125 verbose headers   'x-cache': 'HIT',
+125 verbose headers   'x-cache-hits': '1',
+125 verbose headers   'x-timer': 'S1495591988.236971,VS0,VE1',
+125 verbose headers   vary: 'Accept-Encoding' }
+126 silly get cb [ 304,
+126 silly get   { date: 'Wed, 24 May 2017 02:13:08 GMT',
+126 silly get     via: '1.1 varnish',
+126 silly get     'cache-control': 'max-age=300',
+126 silly get     etag: 'W/"592433b6-24b3e"',
+126 silly get     age: '20',
+126 silly get     connection: 'keep-alive',
+126 silly get     'x-served-by': 'cache-sjc3626-SJC',
+126 silly get     'x-cache': 'HIT',
+126 silly get     'x-cache-hits': '1',
+126 silly get     'x-timer': 'S1495591988.236971,VS0,VE1',
+126 silly get     vary: 'Accept-Encoding' } ]
+127 verbose etag https://registry.npmjs.org/angular from cache
+128 verbose get saving angular to /Users/ryanamarit1/.npm/registry.npmjs.org/angular/.cache.json
+129 verbose correctMkdir /Users/ryanamarit1/.npm correctMkdir not in flight; initializing
+130 silly pickManifestFromRegistryMetadata spec 1.3.15 tag latest versions [ '0.0.1',
+130 silly pickManifestFromRegistryMetadata   '0.0.1-1',
+130 silly pickManifestFromRegistryMetadata   '0.0.1-2',
+130 silly pickManifestFromRegistryMetadata   '0.0.2',
+130 silly pickManifestFromRegistryMetadata   '0.0.3',
+130 silly pickManifestFromRegistryMetadata   '0.0.4',
+130 silly pickManifestFromRegistryMetadata   '1.0.0',
+130 silly pickManifestFromRegistryMetadata   '1.0.1',
+130 silly pickManifestFromRegistryMetadata   '1.0.2',
+130 silly pickManifestFromRegistryMetadata   '1.0.3',
+130 silly pickManifestFromRegistryMetadata   '1.0.4',
+130 silly pickManifestFromRegistryMetadata   '1.0.5',
+130 silly pickManifestFromRegistryMetadata   '1.0.6',
+130 silly pickManifestFromRegistryMetadata   '1.0.7',
+130 silly pickManifestFromRegistryMetadata   '1.0.8',
+130 silly pickManifestFromRegistryMetadata   '1.1.0',
+130 silly pickManifestFromRegistryMetadata   '1.1.1',
+130 silly pickManifestFromRegistryMetadata   '1.1.2',
+130 silly pickManifestFromRegistryMetadata   '1.1.3',
+130 silly pickManifestFromRegistryMetadata   '1.1.4',
+130 silly pickManifestFromRegistryMetadata   '1.1.5',
+130 silly pickManifestFromRegistryMetadata   '1.2.0',
+130 silly pickManifestFromRegistryMetadata   '1.2.1',
+130 silly pickManifestFromRegistryMetadata   '1.2.2',
+130 silly pickManifestFromRegistryMetadata   '1.2.3',
+130 silly pickManifestFromRegistryMetadata   '1.2.4',
+130 silly pickManifestFromRegistryMetadata   '1.2.5',
+130 silly pickManifestFromRegistryMetadata   '1.2.6',
+130 silly pickManifestFromRegistryMetadata   '1.2.7',
+130 silly pickManifestFromRegistryMetadata   '1.2.8',
+130 silly pickManifestFromRegistryMetadata   '1.2.9',
+130 silly pickManifestFromRegistryMetadata   '1.2.10',
+130 silly pickManifestFromRegistryMetadata   '1.2.11',
+130 silly pickManifestFromRegistryMetadata   '1.2.12',
+130 silly pickManifestFromRegistryMetadata   '1.2.13',
+130 silly pickManifestFromRegistryMetadata   '1.2.14',
+130 silly pickManifestFromRegistryMetadata   '1.2.15',
+130 silly pickManifestFromRegistryMetadata   '1.2.16',
+130 silly pickManifestFromRegistryMetadata   '1.2.17',
+130 silly pickManifestFromRegistryMetadata   '1.2.18',
+130 silly pickManifestFromRegistryMetadata   '1.2.19',
+130 silly pickManifestFromRegistryMetadata   '1.2.20',
+130 silly pickManifestFromRegistryMetadata   '1.2.21',
+130 silly pickManifestFromRegistryMetadata   '1.2.22',
+130 silly pickManifestFromRegistryMetadata   '1.2.23',
+130 silly pickManifestFromRegistryMetadata   '1.3.0-rc.5',
+130 silly pickManifestFromRegistryMetadata   '1.3.0',
+130 silly pickManifestFromRegistryMetadata   '1.3.1',
+130 silly pickManifestFromRegistryMetadata   '1.3.2',
+130 silly pickManifestFromRegistryMetadata   '1.3.3',
+130 silly pickManifestFromRegistryMetadata   '1.3.4-build.3588',
+130 silly pickManifestFromRegistryMetadata   '1.2.27',
+130 silly pickManifestFromRegistryMetadata   '1.3.4',
+130 silly pickManifestFromRegistryMetadata   '1.3.5',
+130 silly pickManifestFromRegistryMetadata   '1.3.6',
+130 silly pickManifestFromRegistryMetadata   '1.3.7',
+130 silly pickManifestFromRegistryMetadata   '1.2.28',
+130 silly pickManifestFromRegistryMetadata   '1.3.8',
+130 silly pickManifestFromRegistryMetadata   '1.4.0-beta.0',
+130 silly pickManifestFromRegistryMetadata   '1.3.9',
+130 silly pickManifestFromRegistryMetadata   '1.3.10',
+130 silly pickManifestFromRegistryMetadata   '1.4.0-beta.1',
+130 silly pickManifestFromRegistryMetadata   '1.4.0-beta.2',
+130 silly pickManifestFromRegistryMetadata   '1.3.11',
+130 silly pickManifestFromRegistryMetadata   '1.4.0-beta.3',
+130 silly pickManifestFromRegistryMetadata   '1.3.12',
+130 silly pickManifestFromRegistryMetadata   '1.3.13',
+130 silly pickManifestFromRegistryMetadata   '1.4.0-beta.4',
+130 silly pickManifestFromRegistryMetadata   '1.3.14',
+130 silly pickManifestFromRegistryMetadata   '1.4.0-beta.5',
+130 silly pickManifestFromRegistryMetadata   '1.4.0-beta.6',
+130 silly pickManifestFromRegistryMetadata   '1.3.15',
+130 silly pickManifestFromRegistryMetadata   '1.4.0-rc.0',
+130 silly pickManifestFromRegistryMetadata   '1.4.0-rc.1',
+130 silly pickManifestFromRegistryMetadata   '1.4.0-rc.2',
+130 silly pickManifestFromRegistryMetadata   '1.4.0',
+130 silly pickManifestFromRegistryMetadata   '1.3.16',
+130 silly pickManifestFromRegistryMetadata   '1.4.1',
+130 silly pickManifestFromRegistryMetadata   '1.4.2',
+130 silly pickManifestFromRegistryMetadata   '1.3.17',
+130 silly pickManifestFromRegistryMetadata   '1.4.3',
+130 silly pickManifestFromRegistryMetadata   '1.4.4',
+130 silly pickManifestFromRegistryMetadata   '1.3.18',
+130 silly pickManifestFromRegistryMetadata   '1.4.5',
+130 silly pickManifestFromRegistryMetadata   '1.3.19',
+130 silly pickManifestFromRegistryMetadata   '1.4.6',
+130 silly pickManifestFromRegistryMetadata   '1.5.0-beta.0',
+130 silly pickManifestFromRegistryMetadata   '1.2.29',
+130 silly pickManifestFromRegistryMetadata   '1.3.20',
+130 silly pickManifestFromRegistryMetadata   '1.4.7',
+130 silly pickManifestFromRegistryMetadata   '1.5.0-beta.2',
+130 silly pickManifestFromRegistryMetadata   '1.4.8',
+130 silly pickManifestFromRegistryMetadata   '1.5.0-rc.0',
+130 silly pickManifestFromRegistryMetadata   '1.5.0-rc.1',
+130 silly pickManifestFromRegistryMetadata   '1.4.9',
+130 silly pickManifestFromRegistryMetadata   '1.5.0-rc.2',
+130 silly pickManifestFromRegistryMetadata   '1.5.0',
+130 silly pickManifestFromRegistryMetadata   '1.5.1',
+130 silly pickManifestFromRegistryMetadata   '1.4.10',
+130 silly pickManifestFromRegistryMetadata   '1.5.2',
+130 silly pickManifestFromRegistryMetadata   ... 23 more items ]
+131 silly resolveWithNewModule angular@1.3.15 checking installable status
+132 silly cache add args [ 'angular@1.3.15', null ]
+133 verbose cache add spec angular@1.3.15
+134 silly cache add parsed spec Result {
+134 silly cache add   raw: 'angular@1.3.15',
+134 silly cache add   scope: null,
+134 silly cache add   escapedName: 'angular',
+134 silly cache add   name: 'angular',
+134 silly cache add   rawSpec: '1.3.15',
+134 silly cache add   spec: '1.3.15',
+134 silly cache add   type: 'version' }
+135 silly addNamed angular@1.3.15
+136 verbose addNamed "1.3.15" is a plain semver version for angular
+137 silly mapToRegistry name angular
+138 silly mapToRegistry using default registry
+139 silly mapToRegistry registry https://registry.npmjs.org/
+140 silly mapToRegistry data Result {
+140 silly mapToRegistry   raw: 'angular',
+140 silly mapToRegistry   scope: null,
+140 silly mapToRegistry   escapedName: 'angular',
+140 silly mapToRegistry   name: 'angular',
+140 silly mapToRegistry   rawSpec: '',
+140 silly mapToRegistry   spec: 'latest',
+140 silly mapToRegistry   type: 'tag' }
+141 silly mapToRegistry uri https://registry.npmjs.org/angular
+142 verbose addNameVersion registry:https://registry.npmjs.org/angular not in flight; fetching
+143 verbose get https://registry.npmjs.org/angular not expired, no request
+144 silly cache afterAdd angular@1.3.15
+145 verbose afterAdd /Users/ryanamarit1/.npm/angular/1.3.15/package/package.json not in flight; writing
+146 verbose correctMkdir /Users/ryanamarit1/.npm correctMkdir not in flight; initializing
+147 verbose afterAdd /Users/ryanamarit1/.npm/angular/1.3.15/package/package.json written
+148 silly fetchNamedPackageData inotify
+149 silly mapToRegistry name inotify
+150 silly mapToRegistry using default registry
+151 silly mapToRegistry registry https://registry.npmjs.org/
+152 silly mapToRegistry data Result {
+152 silly mapToRegistry   raw: 'inotify',
+152 silly mapToRegistry   scope: null,
+152 silly mapToRegistry   escapedName: 'inotify',
+152 silly mapToRegistry   name: 'inotify',
+152 silly mapToRegistry   rawSpec: '',
+152 silly mapToRegistry   spec: 'latest',
+152 silly mapToRegistry   type: 'tag' }
+153 silly mapToRegistry uri https://registry.npmjs.org/inotify
+154 verbose request uri https://registry.npmjs.org/inotify
+155 verbose request no auth needed
+156 info attempt registry request try #1 at 7:13:07 PM
+157 http request GET https://registry.npmjs.org/inotify
+158 http 200 https://registry.npmjs.org/inotify
+159 verbose headers { server: 'nginx/1.10.3',
+159 verbose headers   'content-type': 'application/json',
+159 verbose headers   'last-modified': 'Sun, 02 Apr 2017 19:23:48 GMT',
+159 verbose headers   etag: 'W/"58e14fc4-721f"',
+159 verbose headers   'content-encoding': 'gzip',
+159 verbose headers   'cache-control': 'max-age=300',
+159 verbose headers   'content-length': '5797',
+159 verbose headers   'accept-ranges': 'bytes',
+159 verbose headers   date: 'Wed, 24 May 2017 02:13:08 GMT',
+159 verbose headers   via: '1.1 varnish',
+159 verbose headers   age: '0',
+159 verbose headers   connection: 'keep-alive',
+159 verbose headers   'x-served-by': 'cache-sjc3636-SJC',
+159 verbose headers   'x-cache': 'MISS',
+159 verbose headers   'x-cache-hits': '0',
+159 verbose headers   'x-timer': 'S1495591988.320467,VS0,VE123',
+159 verbose headers   vary: 'Accept-Encoding' }
+160 silly get cb [ 200,
+160 silly get   { server: 'nginx/1.10.3',
+160 silly get     'content-type': 'application/json',
+160 silly get     'last-modified': 'Sun, 02 Apr 2017 19:23:48 GMT',
+160 silly get     etag: 'W/"58e14fc4-721f"',
+160 silly get     'content-encoding': 'gzip',
+160 silly get     'cache-control': 'max-age=300',
+160 silly get     'content-length': '5797',
+160 silly get     'accept-ranges': 'bytes',
+160 silly get     date: 'Wed, 24 May 2017 02:13:08 GMT',
+160 silly get     via: '1.1 varnish',
+160 silly get     age: '0',
+160 silly get     connection: 'keep-alive',
+160 silly get     'x-served-by': 'cache-sjc3636-SJC',
+160 silly get     'x-cache': 'MISS',
+160 silly get     'x-cache-hits': '0',
+160 silly get     'x-timer': 'S1495591988.320467,VS0,VE123',
+160 silly get     vary: 'Accept-Encoding' } ]
+161 verbose get saving inotify to /Users/ryanamarit1/.npm/registry.npmjs.org/inotify/.cache.json
+162 verbose correctMkdir /Users/ryanamarit1/.npm correctMkdir not in flight; initializing
+163 silly pickManifestFromRegistryMetadata spec >=0.1.6 tag latest versions [ '0.1.2',
+163 silly pickManifestFromRegistryMetadata   '0.1.3',
+163 silly pickManifestFromRegistryMetadata   '0.1.4',
+163 silly pickManifestFromRegistryMetadata   '0.1.5',
+163 silly pickManifestFromRegistryMetadata   '0.1.6',
+163 silly pickManifestFromRegistryMetadata   '0.1.7',
+163 silly pickManifestFromRegistryMetadata   '0.1.8',
+163 silly pickManifestFromRegistryMetadata   '0.2.0',
+163 silly pickManifestFromRegistryMetadata   '0.2.1',
+163 silly pickManifestFromRegistryMetadata   '0.2.2',
+163 silly pickManifestFromRegistryMetadata   '1.0.0',
+163 silly pickManifestFromRegistryMetadata   '1.1.0',
+163 silly pickManifestFromRegistryMetadata   '1.2.0',
+163 silly pickManifestFromRegistryMetadata   '1.2.1',
+163 silly pickManifestFromRegistryMetadata   '1.3.0',
+163 silly pickManifestFromRegistryMetadata   '1.4.0',
+163 silly pickManifestFromRegistryMetadata   '1.4.1' ]
+164 silly resolveWithNewModule inotify@1.4.1 checking installable status
+165 silly rollbackFailedOptional Starting
+166 silly rollbackFailedOptional Finishing
+167 silly runTopLevelLifecycles Finishing
+168 silly install printInstalled
+169 verbose stack Error: Unsupported platform for inotify@1.4.1: wanted {"name":"inotify","version":"1.4.1","author":{"name":"Camilo Aguilar","email":"camilo.aguilar@gmail.com"},"email":"camilo.aguilar@gmail.com","keywords":["inotify","watch","monitor","watch files","watch directories"],"license":"MIT","description":"inotify bindings for v8 javascript engine","repository":{"type":"git","url":"git+ssh://git@github.com/c4milo/node-inotify.git"},"os":["linux"],"engines":{"node":">=0.8"},"main":"inotify","dependencies":{"bindings":"^1.2.1","nan":"^2.3.3"},"scripts":{"test":"node-gyp configure build","install":"node-gyp rebuild"},"gypfile":true,"contributors":[{"name":"Adrian Estrada","email":"edsadr@gmail.com"},{"name":"Alexander Makarenko","email":"estliberitas@gmail.com"},{"name":"Brian Ingalls","email":"bingalls@compete.com"},{"name":"Brian White","email":"mscdex@mscdex.net"},{"name":"Camilo Aguilar","email":"camilo.aguilar@gmail.com"},{"name":"Dan VerWeire","email":"dverweire@gmail.com"},{"name":"FrozenCow","email":"frozencow@gmail.com"},{"name":"Michael Boe","email":"mschuylerb@gmail.com"},{"name":"Yannick Croissant","email":"k1der.country@free.fr"},{"name":"ikokostya","email":"ikokostya@gmail.com"}],"gitHead":"c1416dfada3ca4f3fb40e65eededc52461822ec5","bugs":{"url":"https://github.com/c4milo/node-inotify/issues"},"homepage":"https://github.com/c4milo/node-inotify#readme","_id":"inotify@1.4.1","_shasum":"8abdeb7ee9cbc291542a252df00d848b2a8f9287","_from":"inotify@>= 0.1.6","_npmVersion":"3.8.6","_nodeVersion":"5.11.0","_npmUser":{"name":"c4milo","email":"camilo.aguilar@gmail.com"},"maintainers":[{"name":"camilo","email":"camilo@cloudescape.com"},{"name":"c4milo","email":"camilo.aguilar@gmail.com"}],"dist":{"shasum":"8abdeb7ee9cbc291542a252df00d848b2a8f9287","tarball":"https://registry.npmjs.org/inotify/-/inotify-1.4.1.tgz"},"_npmOperationalInternal":{"host":"packages-16-east.internal.npmjs.com","tmp":"tmp/inotify-1.4.1.tgz_1462444544613_0.7660284182056785"},"directories":{},"_resolved":"https://registry.npmjs.org/inotify/-/inotify-1.4.1.tgz","_requested":{"raw":"inotify@>= 0.1.6","scope":null,"escapedName":"inotify","name":"inotify","rawSpec":">= 0.1.6","spec":">=0.1.6","type":"range"},"_spec":"inotify@>= 0.1.6","_where":"/Users/ryanamarit1/Desktop/SU/Web-Dev/WATS4000/angular-weather/node_modules/dev","_args":[[{"raw":"inotify@>= 0.1.6","scope":null,"escapedName":"inotify","name":"inotify","rawSpec":">= 0.1.6","spec":">=0.1.6","type":"range"},"/Users/ryanamarit1/Desktop/SU/Web-Dev/WATS4000/angular-weather/node_modules/dev"]],"readme":"ERROR: No README data found!"} (current: {"os":"darwin","cpu":"x64"})
+169 verbose stack     at checkPlatform (/usr/local/lib/node_modules/npm/node_modules/npm-install-checks/index.js:45:14)
+169 verbose stack     at thenWarnEngineIssues (/usr/local/lib/node_modules/npm/lib/install/validate-args.js:41:5)
+169 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+169 verbose stack     at checkEngine (/usr/local/lib/node_modules/npm/node_modules/npm-install-checks/index.js:24:10)
+169 verbose stack     at module.exports.isInstallable (/usr/local/lib/node_modules/npm/lib/install/validate-args.js:38:3)
+169 verbose stack     at resolveWithNewModule (/usr/local/lib/node_modules/npm/lib/install/deps.js:523:10)
+169 verbose stack     at /usr/local/lib/node_modules/npm/lib/install/deps.js:466:9
+169 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+169 verbose stack     at /usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:38:12
+169 verbose stack     at addRequestedAndFinish (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:68:5)
+170 verbose pkgid inotify@1.4.1
+171 verbose cwd /Users/ryanamarit1/Desktop/SU/Web-Dev/WATS4000/angular-weather
+172 error Darwin 16.6.0
+173 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "angular-google-maps-geocoder" "--save" "dev"
+174 error node v6.9.5
+175 error npm  v4.1.2
+176 error code EBADPLATFORM
+177 error notsup Unsupported platform for inotify@1.4.1: wanted {"os":"linux","arch":"any"} (current: {"os":"darwin","arch":"x64"})
+178 error notsup Valid OS:    linux
+178 error notsup Valid Arch:  any
+178 error notsup Actual OS:   darwin
+178 error notsup Actual Arch: x64
+179 verbose exit [ 1, true ]

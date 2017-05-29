@@ -18,7 +18,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngStorage', // added to enable localStorage features
-    'ngTouch'
+    'ngTouch',
+    'angularReverseGeocode'
   ])
   .config(function ($routeProvider) {
     $routeProvider
