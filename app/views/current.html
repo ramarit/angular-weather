@@ -23,7 +23,7 @@
 -->
 
 <div class="current-container">
-  <div class="calendar-container" ng-style="getColor(currentWeather)">
+  <div class="calendar-container" ng-style="{background-color: color}">
     <div class="city-info">
       <div class="city">{{currentWeather.name}}</div>
       <div class="day">{{currentWeather.dt*1000 | date:'dd'}}</div>
