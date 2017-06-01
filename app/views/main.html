@@ -41,13 +41,15 @@
       <p>
         <button class="btn btn-lg btn-primary" ng-click="findCities()" ng-keydown="$event.keycode === 13 && findCities()">Find City</button>
       </p>
+
+      
     </div>
 
 
 
     <div ng-if="searchQuery">
-      <p class="lead">{{citiesFound.count}} cities found matching: {{searchQuery}}.</p>
-      <dl ng-repeat="city in citiesFound.list">
+      <!--<p class="lead">{{citiesFound.count}} cities found matching: {{searchQuery}}.</p>-->
+      <dl ng-repeat="city in citiesFound.list | limitTo:1">
         <reverse-geocode lat="{{city.coord.lat}}" lng="{{city.coord.lon}}"></reverse-geocode>
         <dt>{{city.name}}, {{city.sys.country}}</dt>
         <dd>{{city.weather[0].main}} - {{city.weather[0].description}}</dd>

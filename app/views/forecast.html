@@ -7,7 +7,7 @@
       <div class="date">{{weather.dt*1000 | date: 'EEE'}}</div>
       <div class="day">{{weather.dt*1000 | date:'dd'}}</div>
       <div class="month">{{weather.dt*1000 | date:'MMM'}}</div>
-      <div class="forecast-icon"><img src="http://openweathermap.org/img/w/{{weather.weather[0].icon}}.png" alt="icon" style="width:128px;height:128px;"></div>  
+      <div class="forecast-icon"><i class="wi wi-owm-day-{{weather.weather[0].id}}"></i></div>
       <div class="max">{{weather.temp.max}} &deg;F</div>
       <div class="min">{{weather.temp.min}} &deg;F</div>
       <div class="forecast-description">{{weather.weather[0].main}}</div>

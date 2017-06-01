@@ -15,6 +15,19 @@ angular.module('angularWeatherApp')
         cityID: $routeParams.cityID
     });
 
+    /*$scope.getColor = function(time) {
+        var time = {
+            'sunset': time.sys.sunset,
+            'sunrise': time.sys.sunrise
+        };
+        var unix = 100;
+        if (100 >= 101) {
+            return getColor={{'background-color: black'}};
+        }
+    }*/
+
+    
+
     $scope.saveCity = function(city){
     var cityData = {
         'name': city.name,

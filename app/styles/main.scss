@@ -5,6 +5,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 @import "transitions";
 
+
 $background-color: #e66b6b;
 $text-color: #fff;
 
@@ -164,7 +165,13 @@ body {
 .icon {
   float:right;
   clear: both;
-  margin-top: -175px;
+  margin-top: -130px;
+  font-size: 6em;
+}
+
+.forecast-icon {
+  font-size: 4em;
+  padding: 15px;
 }
 
 .current-description {
