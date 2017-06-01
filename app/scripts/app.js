@@ -19,7 +19,8 @@ angular
     'ngSanitize',
     'ngStorage', // added to enable localStorage features
     'ngTouch',
-    'angularReverseGeocode'
+    'angularReverseGeocode',
+    'vsGoogleAutocomplete'
   ])
   .config(function ($routeProvider) {
     $routeProvider

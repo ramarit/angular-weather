@@ -25,6 +25,11 @@ app.controller('MainCtrl', function ($scope, citysearch, $localStorage, $window)
         $window.localStorage.clear();
         $window.location.reload();
     };   
+
+    $scope.options = {
+        types: ['(cities']
+    };
+    
   });
 
 

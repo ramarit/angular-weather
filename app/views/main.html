@@ -1,11 +1,32 @@
 <div ng-app ng-controller="MainCtrl">
   <div ng-if="storage.savedCities">
     <h2>Saved Cities</h2>
-    <p><button class="btn btn-sm btn-primary" ng-click="removeCity()">Remove Cities</button></p>
+    <p><button class="btn btn-sm btn-primary" ng-click="removeCity()">Clear Cities</button></p>
     <ul class="saved-cities-list">
       <li ng-repeat="city in storage.savedCities">
         <a ng-href="#!/current/{{city.id}}" class="">{{city.name}}</a>
       </li>
+      <!--<div id="1" class="dropdown">
+        <li><button class="dropbtn" id="btnClick" onclick="myFunction()">Add location</button></li>
+      </div>
+
+      
+
+      <div id="2" style="display:none;">
+        Search
+      </div>
+
+      <script>
+       $('#btnClick').on('click', function(){
+          if($('#1').css('display')!='none') {
+            $('#2').html().show().siblings('div').hide();
+          }else if($('#2').css('display')!='none'){
+            $('#1').show().siblings('div').hide();
+          }
+       });
+
+      </script>-->
+      <!--<li class="dropdown"><a href="#" onclick="dropDown()">Add location</a></li>-->
     </ul>
   </div>
   <div class="jumbotron">
@@ -14,13 +35,15 @@
     <div ng-init="location='Seattle'">
       <p>
         <label for="location">Location:
-          <input type="text" name="location" ng-model="location" ng-enter="findCities()">
+          <input vs-google-autocomplete="{ types:['(cities)'] }" type="text" name="location" id="location" ng-model="location" placeholder="Enter city name" ng-enter="findCities()">
         </label>
       </p>
       <p>
         <button class="btn btn-lg btn-primary" ng-click="findCities()" ng-keydown="$event.keycode === 13 && findCities()">Find City</button>
       </p>
     </div>
+
+
 
     <div ng-if="searchQuery">
       <p class="lead">{{citiesFound.count}} cities found matching: {{searchQuery}}.</p>

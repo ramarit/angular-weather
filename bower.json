@@ -16,7 +16,8 @@
     "animate.css": "^3.5.2",
     "angular-google-maps-geocoder": "^0.0.4",
     "angular-busy": "^4.1.4",
-    "angular-reverse-geocode": "1.2.16"
+    "angular-reverse-geocode": "*",
+    "vsGoogleAutocomplete": "vs-google-autocomplete#^0.5.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"
